@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arham's Games</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+        }
+        .game-link {
+            display: block;
+            padding: 16px 24px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #8b5cf6;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #e2e8f0;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .game-link:hover {
+            background: rgba(139, 92, 246, 0.2);
+            border-left-color: #ec4899;
+            transform: translateX(10px);
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+        }
+        .glow-text {
+            text-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .game-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="title-font text-5xl md:text-6xl font-bold text-white glow-text mb-4">
+                Arham's Games
+            </h1>
+            <p class="text-gray-400 text-lg">
+                Have some literal fun! 🎮
+            </p>
+        </header>
+
+        <!-- Games List -->
+        <section class="game-card">
+            <h2 class="title-font text-2xl font-bold text-purple-400 mb-6">Games Made by Arham</h2>
+            <div id="gamesList" class="space-y-2">
+                <!-- Add your game links here -->
+                <p><a href="#" class="game-link">Puzzle1</a></p>
+                <p><a href="#" class="game-link">Space Adventure</a></p>
+                <p><a href="#" class="game-link">Pixel Runner</a></p>
+                <p><a href="#" class="game-link">Mystic Quest</a></p>
+                <p><a href="#" class="game-link">Galaxy Defender</a></p>
+                <p><a href="#" class="game-link">Sky Racer</a></p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 mt-12 pt-8 border-t border-gray-800">
+            <p>Made with 💜 for Arham</p>
+        </footer>
+    </div>
+</body>
+</html>
